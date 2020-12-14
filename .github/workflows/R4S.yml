@@ -25,7 +25,7 @@ env:
   REPO_URL: https://github.com/1715173329/openwrt
   REPO_BRANCH: 1806-k54-nanopi-r4s
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: N1full.config
+  CONFIG_FILE: r4s.config
   DIY_P1_SH: diy-part2.sh
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
