@@ -13,6 +13,11 @@
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
+# set ARM to aarch64_generic
+rm -rf target/linux/armvirt/64/target.mk
+wget https://github.com/Mattaclp/NewLEDE/raw/main/aarch64_generic/target.mk
+mv target.mk target/linux/armvirt/64/
+
 # add qBittorrent
 #rm -rf package/lean/qBittorrent-Enhanced-Edition
 #svn co https://github.com/kwokwai6618/lede/trunk/package/lean/qBittorrent package/lean/qBittorrent
