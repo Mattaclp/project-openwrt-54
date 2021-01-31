@@ -18,6 +18,12 @@ rm -rf target/linux/armvirt/64/target.mk
 wget https://github.com/Mattaclp/NewLEDE/raw/main/aarch64_generic/target.mk
 mv target.mk target/linux/armvirt/64/
 
+# Change v2ray xray
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/v2ray package/lean/v2ray
+rm -rf package/lean/v2ray && mv v2ray package/lean/
+svn co https://github.com/fw876/helloworld/trunk/xray package/lean/xray
+rm -rf package/lean/xray && mv xray package/lean/
+
 # add qBittorrent
 #rm -rf package/lean/qBittorrent-Enhanced-Edition
 #svn co https://github.com/kwokwai6618/lede/trunk/package/lean/qBittorrent package/lean/qBittorrent
