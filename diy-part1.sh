@@ -18,6 +18,10 @@ rm -rf target/linux/armvirt/64/target.mk
 wget https://github.com/Mattaclp/NewLEDE/raw/main/aarch64_generic/target.mk
 mv target.mk target/linux/armvirt/64/
 
+# add koolproxyR
+git clone https://github.com/Beginner-Go/luci-app-koolproxyR
+mv luci-app-koolproxyR package/lean/
+
 # Change v2ray xray
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/v2ray
 rm -rf package/lean/v2ray && mv v2ray package/lean/
