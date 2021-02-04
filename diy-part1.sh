@@ -23,10 +23,10 @@ git clone https://github.com/Beginner-Go/luci-app-koolproxyR
 mv luci-app-koolproxyR package/lean/
 
 # Change v2ray xray
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/v2ray
-rm -rf package/lean/v2ray && mv v2ray package/lean/
-svn co https://github.com/fw876/helloworld/trunk/xray
-rm -rf package/lean/xray && mv xray package/lean/
+#svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/v2ray
+#rm -rf package/lean/v2ray && mv v2ray package/lean/
+#svn co https://github.com/fw876/helloworld/trunk/xray
+#rm -rf package/lean/xray && mv xray package/lean/
 
 # add qBittorrent
 #rm -rf package/lean/qBittorrent-Enhanced-Edition
