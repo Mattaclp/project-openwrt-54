@@ -18,6 +18,10 @@ rm -rf target/linux/armvirt/64/target.mk
 wget https://github.com/Mattaclp/NewLEDE/raw/main/aarch64_generic/target.mk
 mv target.mk target/linux/armvirt/64/
 
+# add VSSR
+git clone https://github.com/jerrykuku/luci-app-vssr.git
+rm -rf package/ctcgfw/luci-app-vssr && mv luci-app-vssr package/ctcgfw/
+
 # add koolproxyR
 git clone https://github.com/Beginner-Go/luci-app-koolproxyR
 mv luci-app-koolproxyR package/lean/
