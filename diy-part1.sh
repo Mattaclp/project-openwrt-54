@@ -22,6 +22,11 @@ mv target.mk target/linux/armvirt/64/
 #git clone https://github.com/jerrykuku/luci-app-vssr.git
 #rm -rf package/ctcgfw/luci-app-vssr && mv luci-app-vssr package/ctcgfw/
 
+# add VSSR2
+rm -rf package/ctcgfw/luci-app-vssr/Makefile
+wget https://github.com/jerrykuku/luci-app-vssr/raw/master/Makefile
+mv Makefile package/ctcgfw/luci-app-vssr/
+
 # add koolproxyR
 git clone https://github.com/Beginner-Go/luci-app-koolproxyR
 mv luci-app-koolproxyR package/lean/
