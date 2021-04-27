@@ -1,0 +1,31 @@
+这里提供一个回退方式，经测试适用于 18.06-k5.4 分支，其他分支暂时未测试，也不做任何保证:
+
+但正如上文开发者所述，docker-ce 不再维护，使用者需自担风险。
+
+clone 源码，cd 至源码所在目录，先不要进行 update & install feeds 的操作，执行以下命令:
+
+wget https://raw.githubusercontent.com/SuLingGG/OpenWrt-Mini/main/scripts/revert-docker.sh
+chmod +x revert-docker.sh
+./revert-docker.sh
+然后进行 update & install feeds 的操作:
+
+./scripts/feeds update -a && ./scripts/feeds install -a
+接着 make menuconfig，按顺序 执行以下操作:
+
+.
+├── LuCI
+│   └── Applications
+│       └── luci-app-dockerman
+├── Utilities
+│   └── docker-ce
+│       └── ...(全部选中 docker-ce 的所有特性)
+└── Global build settings
+    └── Kernel build options
+        ├── -*- Enable kernel cgroups
+        ├── ...
+        ├── (选中 Enable kernel cgroups 到 Enable kernel namespaces 之间的所有项目)
+        ├── ...
+        └── -*- Enable kernel namespaces
+然后正常编译，即可将 docker 回退至 docker-ce。
+
+但是使用此方法，在之后进行 update feeds 的操作时，packages 的 feeds 不会被 ./scripts/feeds update -a 命令更新，如果你在之后需要更新 packages feeds，需要进入 customfeeds/packages 目录执行 git pull 来进行更新，如果在 git pull 过程中发生冲突，请研究我提供的 revert-docker.sh 自行解决。
