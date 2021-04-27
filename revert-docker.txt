@@ -28,4 +28,6 @@ chmod +x revert-docker.sh
         └── -*- Enable kernel namespaces
 然后正常编译，即可将 docker 回退至 docker-ce。
 
-但是使用此方法，在之后进行 update feeds 的操作时，packages 的 feeds 不会被 ./scripts/feeds update -a 命令更新，如果你在之后需要更新 packages feeds，需要进入 customfeeds/packages 目录执行 git pull 来进行更新，如果在 git pull 过程中发生冲突，请研究我提供的 revert-docker.sh 自行解决。
+但是使用此方法，在之后进行 update feeds 的操作时，packages 的 feeds 不会被 ./scripts/feeds update -a 命令更新，
+如果你在之后需要更新 packages feeds，需要进入 customfeeds/packages 目录执行 git pull 来进行更新，
+如果在 git pull 过程中发生冲突，请研究我提供的 revert-docker.sh 自行解决。
