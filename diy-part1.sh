@@ -31,7 +31,8 @@ mv target.mk target/linux/armvirt/64/
 #sed -i 's/20210119/20210205/g' package/ctcgfw/luci-app-vssr/Makefile
 
 # add koolproxyR
-git clone https://github.com/Beginner-Go/luci-app-koolproxyR
+#git clone https://github.com/Beginner-Go/luci-app-koolproxyR
+git clone https://github.com/Jason6111/luci-app-koolproxyR
 mv luci-app-koolproxyR package/lean/
 
 # Change v2ray xray
