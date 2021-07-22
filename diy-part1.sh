@@ -13,6 +13,8 @@
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
+git reset --hard a535ede088e7278a38253c9bd5fc5373833f7288
+
 # set ARM to aarch64_generic
 #rm -rf target/linux/armvirt/64/target.mk
 #wget https://github.com/Mattaclp/NewLEDE/raw/main/aarch64_generic/target.mk
