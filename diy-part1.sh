@@ -13,7 +13,7 @@
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
-git reset --hard ca5024d97b39c485a4aa4fe0f39376e1dd574718
+git reset --hard 50c08d2207e52b81a8e7210addae70c61454a0e4
 
 # set ARM to aarch64_generic
 #rm -rf target/linux/armvirt/64/target.mk
