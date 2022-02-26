@@ -34,7 +34,7 @@
 
 # add koolproxyR
 #git clone https://github.com/Beginner-Go/luci-app-koolproxyR
-git clone https://github.com/Jason6111/luci-app-koolproxyR
+git clone https://github.com/chiwaicw/luci-app-koolproxyR
 mv luci-app-koolproxyR package/lean/
 
 # Change v2ray xray
