@@ -20,13 +20,16 @@
 #wget https://github.com/Mattaclp/NewLEDE/raw/main/aarch64_generic/target.mk
 #mv target.mk target/linux/armvirt/64/
 
-# add new version VSSR helloworld
+# add new version VSSR helloworld passwall openclash
 git clone https://github.com/fw876/helloworld.git package/helloworld
 git clone https://github.com/jerrykuku/lua-maxminddb.git
 mv lua-maxminddb package/lean/
 git clone https://github.com/jerrykuku/luci-app-vssr.git
 mv luci-app-vssr package/lean/
 git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
+git clone -b master https://github.com/vernesong/OpenClash.git package/luci-app-openclash
+git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-passwall
+svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall package/openwrt-passwall/luci-app-passwall
 
 # add VSSR
 #git clone https://github.com/jerrykuku/luci-app-vssr.git
