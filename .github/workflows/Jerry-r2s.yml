@@ -21,15 +21,15 @@ on:
       - '.config'
 #  schedule:
 #    - cron: 01 19 * * *
-#  watch:
-#    types: started
+  watch:
+    types: started
 
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
   REPO_BRANCH: openwrt-18.06-k5.4
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: JerryR2S.config
+  CONFIG_FILE: R2S-test.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: true
