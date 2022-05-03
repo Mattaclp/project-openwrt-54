@@ -30,6 +30,16 @@ rm -rf feeds/luci/applications/luci-app-argon-config/
 rm -rf feeds/luci/themes/luci-theme-argon*
 rm -rf feeds/luci/applications/luci-app-passwall/
 
+rm -rf feeds/packages/net/brook/
+rm -rf feeds/packages/net/chinadns-ng/
+rm -rf feeds/packages/net/dns2socks/
+rm -rf feeds/packages/net/microsocks/
+rm -rf feeds/packages/net/pdnsd-alt/
+rm -rf feeds/packages/net/ssocks/
+rm -rf feeds/packages/net/trojan-go/
+rm -rf feeds/packages/net/trojan-plus/
+rm -rf feeds/luci/applications/luci-app-openclash/
+
 #add luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 
