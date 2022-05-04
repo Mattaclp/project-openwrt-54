@@ -27,7 +27,7 @@ mv lua-maxminddb package/lean/
 git clone https://github.com/jerrykuku/luci-app-vssr.git
 mv luci-app-vssr package/lean/
 git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
-git clone -b master https://github.com/vernesong/OpenClash.git package/luci-app-openclash
+svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-passwall
 svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall package/openwrt-passwall/luci-app-passwall
 
