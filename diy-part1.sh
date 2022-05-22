@@ -26,9 +26,9 @@
 # add new version VSSR helloworld passwall openclash
 git clone https://github.com/fw876/helloworld.git package/helloworld
 git clone https://github.com/jerrykuku/lua-maxminddb.git
-mv lua-maxminddb package/lean/
+mv lua-maxminddb package/
 git clone https://github.com/jerrykuku/luci-app-vssr.git
-mv luci-app-vssr package/lean/
+mv luci-app-vssr package/
 git clone https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/luci-app-openclash
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-passwall
