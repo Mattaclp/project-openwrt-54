@@ -16,7 +16,7 @@
 #git reset --hard 50c08d2207e52b81a8e7210addae70c61454a0e4
 
 # add NanoHatOLED for Neo2
-sed -i '$a src-git NanoHatOLED https://github.com/vinewx/NanoHatOLED.git' feeds.conf.default
+#sed -i '$a src-git NanoHatOLED https://github.com/vinewx/NanoHatOLED.git' feeds.conf.default
 
 # set ARM to aarch64_generic
 #rm -rf target/linux/armvirt/64/target.mk
