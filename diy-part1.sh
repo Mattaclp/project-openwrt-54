@@ -23,6 +23,11 @@
 #wget https://github.com/Mattaclp/NewLEDE/raw/main/aarch64_generic/target.mk
 #mv target.mk target/linux/armvirt/64/
 
+# add NanoHatOLED for Neo2
+sed -i '$a src-git NanoHatOLED https://github.com/ctr54188/NanoHatOLED.git' feeds.conf.default
+wget https://github.com/ctr54188/NanoHatOLED/raw/master/openwrt/target/linux/sunxi/patches-5.4/499-neo2-enable-i2c.patch
+mv 499-neo2-enable-i2c.patch target/linux/sunxi/patches-5.4/
+
 # add new version VSSR helloworld passwall openclash
 git clone https://github.com/fw876/helloworld.git package/helloworld
 git clone https://github.com/jerrykuku/lua-maxminddb.git
