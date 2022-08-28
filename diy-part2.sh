@@ -29,6 +29,7 @@ rm -rf feeds/packages/lang/lua-maxminddb/
 rm -rf feeds/luci/applications/luci-app-argon-config/
 rm -rf feeds/luci/themes/luci-theme-argon*
 rm -rf feeds/luci/applications/luci-app-passwall/
+rm -rf feeds/luci/applications/luci-app-v2ray-server/
 
 rm -rf feeds/packages/net/brook/
 rm -rf feeds/packages/net/chinadns-ng/
@@ -42,6 +43,9 @@ rm -rf feeds/luci/applications/luci-app-openclash/
 
 #add luci-theme-argon
 git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+
+#add Lean v2ray-server
+svn co https://github.com/coolsnowwolf/luci/trunk/applications/luci-app-v2ray-server feeds/luci/applications/luci-app-v2ray-server
 
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.1.253/g' package/base-files/files/bin/config_generate
